@@ -7,5 +7,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  devServer: {
+    port: 8080,
+    open: true
+  },
+  mode: 'development',
   plugins: [new HtmlWebpackPlugin()],
 };
